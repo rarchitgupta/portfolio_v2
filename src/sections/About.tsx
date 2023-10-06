@@ -1,11 +1,11 @@
 import { Container, Text } from "@chakra-ui/react";
-import { H3 } from "../components/Headings/H3";
+import { H1 } from "../components/Headings/H1";
 
 export const About = () => {
   return (
     <Container maxW="3xl">
-      <H3 size={{ base: "lg", md: "xl" }}>Lorem ipsum</H3>
-      <Text>
+      <H1 size={{ base: "lg", md: "xl" }}>Lorem ipsum</H1>
+      <Text size={{ base: "md", md: "lg" }}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
