@@ -1,39 +1,33 @@
-import { extendTheme } from '@chakra-ui/react'
-
-const fonts = { mono: `'Menlo', monospace` }
+import { extendTheme } from "@chakra-ui/react";
+import { Inter } from "next/font/google";
+const inter = Inter({ subsets: ["latin"] });
+const fonts = { body: inter.style.fontFamily, heading: inter.style.fontFamily };
 
 const breakpoints = {
-  sm: '40em',
-  md: '52em',
-  lg: '64em',
-  xl: '80em',
-}
+  sm: "40em",
+  md: "52em",
+  lg: "64em",
+  xl: "80em",
+};
 
 const theme = extendTheme({
-  semanticTokens: {
-    colors: {
-      text: {
-        default: '#16161D',
-        _dark: '#ade3b8',
-      },
-      heroGradientStart: {
-        default: '#7928CA',
-        _dark: '#e3a7f9',
-      },
-      heroGradientEnd: {
-        default: '#FF0080',
-        _dark: '#fbec8f',
-      },
-    },
-    radii: {
-      button: '12px',
-    },
-  },
   colors: {
-    black: '#16161D',
+    black: "#16161D",
+    headingColors: {
+      light: {
+        h1: "#212529",
+        h2: "#495057",
+        h3: "#6C757D",
+      },
+      dark: {
+        h1: "#F8F9FA",
+        h2: "#DEE2E6",
+        h3: "#ADB5BD",
+      },
+    },
   },
   fonts,
   breakpoints,
-})
+});
 
-export default theme
+export default theme;
