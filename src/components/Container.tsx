@@ -1,6 +1,6 @@
 import { Flex, FlexProps } from "@chakra-ui/react";
 
-export const FlexContainer = (props) => (
+export const FlexContainer = (props: FlexProps) => (
   <Flex
     direction="column"
     justifyContent="flex-start"

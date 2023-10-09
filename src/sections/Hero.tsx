@@ -1,4 +1,4 @@
-import { Container, Divider, Flex, Show, useColorMode } from "@chakra-ui/react";
+import { Container, Flex, Show, useColorMode } from "@chakra-ui/react";
 import { H3 } from "../components/Headings/H3";
 import { H1 } from "../components/Headings/H1";
 import Lottie from "react-lottie";
