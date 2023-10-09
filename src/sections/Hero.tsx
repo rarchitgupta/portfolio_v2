@@ -5,12 +5,10 @@ import Lottie from "react-lottie";
 import codeAnimationLight from "../assets/code_lottie.json";
 import codeAnimationDark from "../assets/codedark_lottie.json";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa6";
+import { typeInfo } from "../pages";
 
 interface HeroSectionProps {
-  heroSection: {
-    name: string;
-    profession: string;
-  };
+  heroSection: typeInfo["heroSection"]
 }
 
 export const Hero: React.FC<HeroSectionProps> = ({ heroSection }) => {
