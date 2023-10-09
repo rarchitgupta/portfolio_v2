@@ -10,7 +10,7 @@ export const ExperienceStack = (experience: {
   skills: string;
 }) => {
   return (
-    <Stack>
+    <Stack my={8}>
       <H3 size={{ base: "sm", md: "md" }}>{experience.duration}</H3>
       <H2 size={{ base: "md", md: "lg" }}>
         {experience.position} • {experience.organization}

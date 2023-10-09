@@ -4,7 +4,7 @@ import { H3 } from "../components/Headings/H3";
 export const About = (aboutSection: { about: string }) => {
   return (
     <Container maxW="6xl" my={16}>
-      <H3 size={{ base: "lg", md: "xl" }} my={8}>
+      <H3 size={{ base: "lg", md: "xl" }} my={4}>
         ABOUT
       </H3>
       <Text
