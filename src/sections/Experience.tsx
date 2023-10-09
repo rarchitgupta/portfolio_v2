@@ -2,6 +2,7 @@ import { Badge, Box, Container, Flex, Stack, Text } from "@chakra-ui/react";
 import { H3 } from "../components/Headings/H3";
 import { H2 } from "../components/Headings/H2";
 import { ExperienceStack } from "../components/ExperienceStack";
+import info from "../../info.json";
 
 const experiences = [
   {

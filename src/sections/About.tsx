@@ -8,7 +8,7 @@ export const About = (aboutSection: { about: string }) => {
         ABOUT
       </H3>
       <Text
-        fontSize={{ base: "lg", md: "2xl" }}
+        fontSize={{ base: "lg", md: "xl" }}
         dangerouslySetInnerHTML={{ __html: aboutSection.about }}
       />
     </Container>

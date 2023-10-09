@@ -20,7 +20,8 @@ export const Navbar = () => {
             as={IconButton}
             aria-label="Options"
             icon={<HamburgerIcon />}
-            variant="ghost"
+            variant="solid"
+            colorScheme="teal"
             size="lg"
           />
           <MenuList>
