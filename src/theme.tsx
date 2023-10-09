@@ -1,7 +1,11 @@
 import { extendTheme } from "@chakra-ui/react";
-import { Raleway } from "next/font/google";
-const inter = Raleway({ subsets: ["latin"] });
-const fonts = { body: inter.style.fontFamily, heading: inter.style.fontFamily };
+import { Gabarito, Rubik } from "next/font/google";
+const gabarito = Gabarito({ subsets: ["latin"] });
+const rubik = Rubik({ subsets: ["latin"] });
+const fonts = {
+  body: gabarito.style.fontFamily,
+  heading: rubik.style.fontFamily,
+};
 
 const breakpoints = {
   sm: "40em",
@@ -12,7 +16,6 @@ const breakpoints = {
 
 const theme = extendTheme({
   colors: {
-    black: "#16161D",
     headingColors: {
       light: {
         h1: "#212529",

@@ -8,6 +8,7 @@ export const H1 = (props) => {
       size={props.size}
       my={1}
       {...props}
+      fontWeight={400}
       color={`headingColors.${colorMode}.h1`}
     />
   );

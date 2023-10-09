@@ -1,11 +1,20 @@
-import { Container, Flex, useColorMode } from "@chakra-ui/react";
+import { Container, Flex, Show, useColorMode } from "@chakra-ui/react";
 import { H3 } from "../components/Headings/H3";
 import { H1 } from "../components/Headings/H1";
 import Lottie from "react-lottie";
 import codeAnimationLight from "../assets/code_lottie.json";
 import codeAnimationDark from "../assets/codedark_lottie.json";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa6";
 
-export const Hero = () => {
+interface HeroSectionProps {
+  heroSection: {
+    name: string;
+    profession: string;
+  };
+}
+
+export const Hero: React.FC<HeroSectionProps> = ({ heroSection }) => {
+  const { name, profession } = heroSection;
   const { colorMode } = useColorMode();
   const codeAnimationOptions = {
     loop: false,
@@ -14,13 +23,20 @@ export const Hero = () => {
       colorMode === "light" ? codeAnimationLight : codeAnimationDark,
   };
   return (
-    <Container maxW="6xl">
-      <Flex justifyContent={"center"} h={"95vh"} alignItems={"center"} gap={10}>
+    <Container maxW="6xl" my={48}>
+      <Flex alignItems={"center"} gap={200} justifyContent={"space-between"}>
         <Flex direction={"column"}>
-          <H3 size={{ base: "md", md: "xl" }}>Lorem ipsum</H3>
-          <H1 size={{ base: "lg", md: "3xl" }}>consectetur adipiscing elit</H1>
+          <H1 size={{ base: "3xl", md: "3xl" }}>{name}</H1>
+          <H3 size={{ base: "lg", md: "xl" }}>{profession}</H3>
+          <Flex direction={"row"} mt={8} gap={6}>
+            <FaGithub size={30} />
+            <FaLinkedin size={30} />
+            <FaTwitter size={30} />
+          </Flex>
         </Flex>
-        <Lottie options={codeAnimationOptions} height={350} width={350} />
+        <Show above="md">
+          <Lottie options={codeAnimationOptions} height={450} width={450} />
+        </Show>
       </Flex>
     </Container>
   );

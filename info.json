@@ -1,0 +1,15 @@
+{
+  "heroSection": { "name": "Archit Gupta", "profession": "Software Engineer" },
+  "aboutSection": {
+    "html": "I'm currently working as a <b>Full Stack Software Engineer</b> at <b>Bonatra</b>. I specialize in building web applications and software systems using JavaScript and Python <br />I graduated with a <b>B.Tech</b> in Information Technology from <b>Manipal Institute of Technology</b> <br /> When I'm not coding, I like to play the keyboard, hit the gym or look for new ice-cream flavours"
+  },
+  "experienceSection": [
+    {
+      "organization": "Bonatra",
+      "position": "Software Engineer",
+      "duration": "September 2022 - Present",
+      "description": "Currently working as a full stack software engineer creating systems for devices like the Bonatra X1 Smart Ring and experiences on the web and mobile app",
+      "skills": "Python, JavaScript, React, React Native, Frappe, SQL, MongoDB"
+    }
+  ]
+}
