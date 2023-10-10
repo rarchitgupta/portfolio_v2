@@ -4,7 +4,7 @@ import { H2 } from "./Headings/H2";
 import { typeInfo } from "../pages";
 
 export const ExperienceStack = (
-  experience: typeInfo["experienceSection"]["experiences"][0]
+  experience: typeInfo["experienceSection"]["experiences"][0],
 ) => {
   return (
     <Stack my={8}>

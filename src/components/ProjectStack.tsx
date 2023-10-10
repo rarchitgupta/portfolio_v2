@@ -4,7 +4,7 @@ import { typeInfo } from "../pages";
 import { H2 } from "./Headings/H2";
 
 export const ProjectStack = (
-  project: typeInfo["projectSection"]["projects"][0]
+  project: typeInfo["projectSection"]["projects"][0],
 ) => {
   return (
     <Stack my={8}>
