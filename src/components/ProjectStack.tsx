@@ -5,7 +5,7 @@ import { H2 } from "./Headings/H2";
 import Link from "next/link";
 
 export const ProjectStack = (
-  project: typeInfo["projectSection"]["projects"][0]
+  project: typeInfo["projectSection"]["projects"][0],
 ) => {
   return (
     <Stack my={8}>
