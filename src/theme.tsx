@@ -1,9 +1,9 @@
 import { extendTheme } from "@chakra-ui/react";
-import { Gabarito, Rubik } from "next/font/google";
-const gabarito = Gabarito({ subsets: ["latin"] });
+import { Inter, Rubik } from "next/font/google";
+const inter = Inter({ subsets: ["latin"] });
 const rubik = Rubik({ subsets: ["latin"] });
 const fonts = {
-  body: gabarito.style.fontFamily,
+  body: inter.style.fontFamily,
   heading: rubik.style.fontFamily,
 };
 

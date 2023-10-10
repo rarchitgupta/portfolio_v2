@@ -8,6 +8,11 @@ import { Footer } from "../sections/Footer";
 import InfoData from "../../info.json";
 import fs from "fs/promises";
 import path from "path";
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Archit Gupta",
+  description: "Softwaare Engineer and Web Developer",
+};
 
 export interface IndexProps {
   portfolioData: typeInfo;
