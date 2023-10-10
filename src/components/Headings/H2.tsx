@@ -7,7 +7,7 @@ export const H2 = (props: HeadingProps) => {
       as="h2"
       my={1}
       size={props.size}
-      fontWeight={500}
+      fontWeight={props.fontWeight && 500}
       {...props}
       color={`headingColors.${colorMode}.h2`}
     />

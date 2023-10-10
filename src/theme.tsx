@@ -7,8 +7,8 @@ const fonts = {
   heading: rubik.style.fontFamily,
 };
 
-export type breakPointSizes = "sm" | "md" | "lg" | "xl"
-export type breakPointValues = "40em" | "52em" | "64em" | "80em"
+export type breakPointSizes = "sm" | "md" | "lg" | "xl";
+export type breakPointValues = "40em" | "52em" | "64em" | "80em";
 
 const breakpoints: Record<breakPointSizes, breakPointValues> = {
   sm: "40em",

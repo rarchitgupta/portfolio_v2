@@ -6,12 +6,17 @@ import codeAnimationLight from "../assets/code_lottie.json";
 import codeAnimationDark from "../assets/codedark_lottie.json";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa6";
 import { typeInfo } from "../pages";
+import Link from "next/link";
 
 interface HeroSectionProps {
-  heroSection: typeInfo["heroSection"]
+  heroSection: typeInfo["heroSection"];
+  socialLinks: typeInfo["contactAndFooterSection"]["socialLinks"];
 }
 
-export const Hero: React.FC<HeroSectionProps> = ({ heroSection }) => {
+export const Hero: React.FC<HeroSectionProps> = ({
+  heroSection,
+  socialLinks,
+}) => {
   const { name, profession } = heroSection;
   const { colorMode } = useColorMode();
   const codeAnimationOptions = {
@@ -27,9 +32,24 @@ export const Hero: React.FC<HeroSectionProps> = ({ heroSection }) => {
           <H1 size={{ base: "3xl", md: "3xl" }}>{name}</H1>
           <H3 size={{ base: "lg", md: "xl" }}>{profession}</H3>
           <Flex direction={"row"} mt={8} gap={6}>
-            <FaGithub size={30} />
-            <FaLinkedin size={30} />
-            <FaTwitter size={30} />
+            <Link href={socialLinks.github}>
+              <FaGithub
+                size={30}
+                color={colorMode === "dark" ? "#82e6d9" : "#309795"}
+              />
+            </Link>
+            <Link href={socialLinks.linkedIn}>
+              <FaLinkedin
+                size={30}
+                color={colorMode === "dark" ? "#82e6d9" : "#309795"}
+              />
+            </Link>
+            <Link href={socialLinks.twitter}>
+              <FaTwitter
+                size={30}
+                color={colorMode === "dark" ? "#82e6d9" : "#309795"}
+              />
+            </Link>
           </Flex>
         </Flex>
         <Show above="md">

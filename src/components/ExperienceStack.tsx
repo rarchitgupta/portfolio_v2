@@ -3,7 +3,9 @@ import { H3 } from "./Headings/H3";
 import { H2 } from "./Headings/H2";
 import { typeInfo } from "../pages";
 
-export const ExperienceStack = (experience: typeInfo["experienceSection"][0]) => {
+export const ExperienceStack = (
+  experience: typeInfo["experienceSection"]["experiences"][0]
+) => {
   return (
     <Stack my={8}>
       <H3 size={{ base: "sm", md: "md" }}>{experience.duration}</H3>

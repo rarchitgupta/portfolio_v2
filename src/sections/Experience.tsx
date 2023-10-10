@@ -1,18 +1,33 @@
-import { Badge, Box, Container, Flex, Stack, Text } from "@chakra-ui/react";
-import { H3 } from "../components/Headings/H3";
+import {
+  Badge,
+  Box,
+  Button,
+  Container,
+  Divider,
+  Flex,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
 import { ExperienceStack } from "../components/ExperienceStack";
 import { typeInfo } from "../pages";
+import { FaRegFileAlt } from "react-icons/fa";
+import Link from "next/link";
+import { H2 } from "../components/Headings/H2";
 
 interface ExperienceProps {
-  experienceArray: typeInfo["experienceSection"]
+  experienceArray: typeInfo["experienceSection"]["experiences"];
+  resumeLink: typeInfo["experienceSection"]["resumeLink"];
 }
 
-export const Experience: React.FC<ExperienceProps> = ({ experienceArray }) => {
+export const Experience: React.FC<ExperienceProps> = ({
+  experienceArray,
+  resumeLink,
+}) => {
   return (
     <Container maxW="6xl" my={16}>
-      <H3 size={{ base: "lg", md: "xl" }} my={8}>
+      <H2 size={{ base: "lg", md: "xl" }} my={8} fontWeight={400}>
         EXPERIENCE
-      </H3>
+      </H2>
       {experienceArray?.map((experience, index) => {
         return (
           <ExperienceStack
@@ -25,6 +40,17 @@ export const Experience: React.FC<ExperienceProps> = ({ experienceArray }) => {
           />
         );
       })}
+      <Link href={resumeLink}>
+        <Button
+          colorScheme="teal"
+          variant="solid"
+          leftIcon={<FaRegFileAlt />}
+          width={{ base: "full", md: 80 }}
+        >
+          Get my Résumé
+        </Button>
+      </Link>
+      <Divider mt={8} />
     </Container>
   );
 };

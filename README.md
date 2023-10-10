@@ -8,8 +8,8 @@
 
 Install dependencies with Bun
 
-```bun install```
+`bun install`
 
 Run the local development server
 
-```bun dev```
+`bun dev`

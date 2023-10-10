@@ -3,30 +3,60 @@
   "aboutSection": {
     "html": "I'm currently working as a <b>Full Stack Software Engineer</b> at <b>Bonatra</b>. I specialize in building web applications and software systems using JavaScript and Python <br />I graduated with a <b>B.Tech</b> in Information Technology from <b>Manipal Institute of Technology</b> <br /> When I'm not coding, I like to play the keyboard, hit the gym or look for new ice-cream flavours"
   },
-  "experienceSection": [
-    {
-      "key": 1,
-      "organization": "Bonatra",
-      "position": "Software Engineer",
-      "duration": "September 2022 - Present",
-      "description": "Currently working as a full stack software engineer creating systems for devices like the Bonatra X1 Smart Ring and experiences on the web and mobile app",
-      "skills": "Python, JavaScript, React, React Native, Frappe, SQL, MongoDB"
-    },
-    {
-      "key": 2,
-      "organization": "QuickMetrix",
-      "position": "Software Engineer Intern",
-      "duration": "January 2022 - June 2022",
-      "description": "Worked as an intern where I came up with a new audit log API for the platform and helped integrate it while migrating old logs into the new format",
-      "skills": "Python, JavaScript, FastAPI, MongoDB"
-    },
-    {
-      "key": 3,
-      "organization": "Ericsson",
-      "position": "Intern Trainee",
-      "duration": "June 2021 - August 2021",
-      "description": "Received basic training in Python, SQL and Shell Scripting and completed relevant assignments and projects in the same",
-      "skills": "Python, SQL, Shell, Linux"
+  "experienceSection": {
+    "resumeLink": "",
+    "experiences": [
+      {
+        "key": 1,
+        "organization": "Bonatra",
+        "position": "Software Engineer",
+        "duration": "September 2022 - Present",
+        "description": "Currently working as a full stack software engineer creating systems for devices like the Bonatra X1 Smart Ring and experiences on the web and mobile app",
+        "skills": "Python, JavaScript, React, React Native, Frappe, SQL, MongoDB"
+      },
+      {
+        "key": 2,
+        "organization": "QuickMetrix",
+        "position": "Software Engineer Intern",
+        "duration": "January 2022 - June 2022",
+        "description": "Worked as an intern where I came up with a new audit log API for the platform and helped integrate it while migrating old logs into the new format",
+        "skills": "Python, JavaScript, FastAPI, MongoDB"
+      },
+      {
+        "key": 3,
+        "organization": "Ericsson",
+        "position": "Intern Trainee",
+        "duration": "June 2021 - August 2021",
+        "description": "Received basic training in Python, SQL and Shell Scripting and completed relevant assignments and projects in the same",
+        "skills": "Python, SQL, Shell, Linux"
+      }
+    ]
+  },
+  "projectSection": {
+    "githubLink": "https://github.com/rarchitgupta",
+    "projects": [
+      {
+        "key": 1,
+        "name": "Expenses Manager",
+        "description": "Web app with authentication to manage individual daily and monthly expenses",
+        "link": "https://github.com/rarchitgupta/expensify",
+        "technologies": "React, Firebase, Jest, Enzyme"
+      },
+      {
+        "key": 2,
+        "name": "Playlist Converter",
+        "description": "CLI app that takes a .txt file and converts all songs in it to a Spotify Playlist",
+        "link": "https://github.com/rarchitgupta/playlistConverter",
+        "technologies": "Python, Spotify API"
+      }
+    ]
+  },
+  "contactAndFooterSection": {
+    "email": "rarchitgupta@gmail.com",
+    "socialLinks": {
+      "linkedIn": "https://www.linkedin.com/in/rarchit-gupta",
+      "github": "https://github.com/rarchitgupta",
+      "twitter": "https://twitter.com/rchitgupta"
     }
-  ]
+  }
 }
