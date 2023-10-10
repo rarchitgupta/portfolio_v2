@@ -1,4 +1,4 @@
-# Portfolio V2 (WIP)
+# Portfolio V2
 
 - NextJS
 - TypeScript
