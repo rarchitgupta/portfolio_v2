@@ -1,16 +1,14 @@
-import { Container, Divider, Flex, Show, useColorMode } from "@chakra-ui/react";
+import { Container, Flex, Show, useColorMode } from "@chakra-ui/react";
 import { H3 } from "../components/Headings/H3";
 import { H1 } from "../components/Headings/H1";
 import Lottie from "react-lottie";
 import codeAnimationLight from "../assets/code_lottie.json";
 import codeAnimationDark from "../assets/codedark_lottie.json";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa6";
+import { typeInfo } from "../pages";
 
 interface HeroSectionProps {
-  heroSection: {
-    name: string;
-    profession: string;
-  };
+  heroSection: typeInfo["heroSection"]
 }
 
 export const Hero: React.FC<HeroSectionProps> = ({ heroSection }) => {

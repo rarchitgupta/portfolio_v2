@@ -1,6 +1,11 @@
 import { Container, useColorMode } from "@chakra-ui/react";
+import { ReactNode } from "react";
 
-export const Layout = ({ children }) => {
+interface LayoutProps {
+  children: ReactNode
+}
+
+export const Layout: React.FC<LayoutProps> = ({ children }) => {
   const { colorMode } = useColorMode();
   const bgColor = {
     light: "#F8F9FA",

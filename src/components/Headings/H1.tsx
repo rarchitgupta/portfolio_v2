@@ -1,6 +1,6 @@
-import { Heading, useColorMode } from "@chakra-ui/react";
+import { Heading, HeadingProps, useColorMode } from "@chakra-ui/react";
 
-export const H1 = (props) => {
+export const H1 = (props: HeadingProps) => {
   const { colorMode } = useColorMode();
   return (
     <Heading

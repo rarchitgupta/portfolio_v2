@@ -3,10 +3,15 @@ import { Navbar } from "../components/Navbar";
 import { Hero } from "../sections/Hero";
 import { About } from "../sections/About";
 import { Experience } from "../sections/Experience";
+import InfoData from "../../info.json"
 import fs from "fs/promises";
 import path from "path";
 
-const Index = ({ portfolioData }) => {
+export interface IndexProps {
+  portfolioData: typeInfo
+}
+
+const Index: React.FC<IndexProps> = ({ portfolioData }) => {
   return (
     <Layout>
       <Navbar />
@@ -20,7 +25,7 @@ const Index = ({ portfolioData }) => {
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), "info.json");
   const jsonData = await fs.readFile(filePath, "utf8");
-  const portfolioData = JSON.parse(jsonData);
+  const portfolioData: typeInfo = JSON.parse(jsonData);
 
   return {
     props: {
@@ -30,3 +35,5 @@ export async function getStaticProps() {
 }
 
 export default Index;
+
+export type typeInfo = typeof InfoData
