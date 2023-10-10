@@ -13,10 +13,7 @@ interface HeroSectionProps {
   socialLinks: typeInfo["contactAndFooterSection"]["socialLinks"];
 }
 
-export const Hero: React.FC<HeroSectionProps> = ({
-  heroSection,
-  socialLinks,
-}) => {
+const Hero: React.FC<HeroSectionProps> = ({ heroSection, socialLinks }) => {
   const { name, profession } = heroSection;
   const { colorMode } = useColorMode();
   return (
@@ -60,3 +57,5 @@ export const Hero: React.FC<HeroSectionProps> = ({
     </Container>
   );
 };
+
+export default Hero;

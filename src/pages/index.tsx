@@ -1,10 +1,12 @@
+import dynamic from "next/dynamic";
 import { Layout } from "../components/Layout";
 import { Navbar } from "../components/Navbar";
-import { Hero } from "../sections/Hero";
-import { About } from "../sections/About";
-import { Experience } from "../sections/Experience";
-import { Projects } from "../sections/Projects";
-import { Footer } from "../sections/Footer";
+const Hero = dynamic(() => import("../sections/Hero"));
+const About = dynamic(() => import("../sections/About"));
+const Experience = dynamic(() => import("../sections/Experience"));
+const Projects = dynamic(() => import("../sections/Projects"));
+const Footer = dynamic(() => import("../sections/Footer"));
+
 import InfoData from "../../info.json";
 import fs from "fs/promises";
 import path from "path";

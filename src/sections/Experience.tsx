@@ -19,7 +19,7 @@ interface ExperienceProps {
   resumeLink: typeInfo["experienceSection"]["resumeLink"];
 }
 
-export const Experience: React.FC<ExperienceProps> = ({
+const Experience: React.FC<ExperienceProps> = ({
   experienceArray,
   resumeLink,
 }) => {
@@ -54,3 +54,5 @@ export const Experience: React.FC<ExperienceProps> = ({
     </Container>
   );
 };
+
+export default Experience;

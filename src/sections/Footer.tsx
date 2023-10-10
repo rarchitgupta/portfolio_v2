@@ -17,7 +17,8 @@ interface FooterProps {
   email: typeInfo["contactAndFooterSection"]["email"];
   socialLinks: typeInfo["contactAndFooterSection"]["socialLinks"];
 }
-export const Footer: React.FC<FooterProps> = ({ socialLinks, email }) => {
+
+const Footer: React.FC<FooterProps> = ({ socialLinks, email }) => {
   const { colorMode } = useColorMode();
   return (
     <Container maxW="6xl" my={16}>
@@ -80,3 +81,5 @@ export const Footer: React.FC<FooterProps> = ({ socialLinks, email }) => {
     </Container>
   );
 };
+
+export default Footer;

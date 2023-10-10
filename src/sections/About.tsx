@@ -2,9 +2,7 @@ import { Container, Divider, Text } from "@chakra-ui/react";
 import { typeInfo } from "../pages";
 import { H2 } from "../components/Headings/H2";
 
-export const About = (aboutSection: {
-  about: typeInfo["aboutSection"]["html"];
-}) => {
+const About = (aboutSection: { about: typeInfo["aboutSection"]["html"] }) => {
   return (
     <Container maxW="6xl" my={16}>
       <H2 size={{ base: "lg", md: "xl" }} my={4} fontWeight={400}>
@@ -18,3 +16,5 @@ export const About = (aboutSection: {
     </Container>
   );
 };
+
+export default About;

@@ -10,10 +10,7 @@ interface ProjectsProps {
   githubLink: typeInfo["projectSection"]["githubLink"];
 }
 
-export const Projects: React.FC<ProjectsProps> = ({
-  projectsArray,
-  githubLink,
-}) => {
+const Projects: React.FC<ProjectsProps> = ({ projectsArray, githubLink }) => {
   return (
     <Container maxW="6xl">
       <H2 size={{ base: "lg", md: "xl" }} my={8} fontWeight={400}>
@@ -44,3 +41,5 @@ export const Projects: React.FC<ProjectsProps> = ({
     </Container>
   );
 };
+
+export default Projects;
