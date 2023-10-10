@@ -1,7 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
 const ChakraProvider = dynamic(() =>
-  import("@chakra-ui/provider").then((mod) => mod.ChakraProvider)
+  import("@chakra-ui/provider").then((mod) => mod.ChakraProvider),
 );
 import { CacheProvider } from "@chakra-ui/next-js";
 import theme from "../theme";
