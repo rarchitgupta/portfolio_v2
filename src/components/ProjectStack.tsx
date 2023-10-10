@@ -2,9 +2,10 @@ import { Button, Center, Flex, Icon, Stack, Tag, Text } from "@chakra-ui/react";
 import { FaGithub } from "react-icons/fa6";
 import { typeInfo } from "../pages";
 import { H2 } from "./Headings/H2";
+import Link from "next/link";
 
 export const ProjectStack = (
-  project: typeInfo["projectSection"]["projects"][0],
+  project: typeInfo["projectSection"]["projects"][0]
 ) => {
   return (
     <Stack my={8}>
@@ -23,15 +24,17 @@ export const ProjectStack = (
           );
         })}
       </Flex>
-      <Button
-        my={2}
-        colorScheme="teal"
-        variant={"outline"}
-        leftIcon={<FaGithub />}
-        width={{ base: "100%", md: 60 }}
-      >
-        Source Code
-      </Button>
+      <Link href={project.link}>
+        <Button
+          my={2}
+          colorScheme="teal"
+          variant={"outline"}
+          leftIcon={<FaGithub />}
+          width={{ base: "100%", md: 60 }}
+        >
+          Source Code
+        </Button>
+      </Link>
     </Stack>
   );
 };

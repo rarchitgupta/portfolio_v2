@@ -16,7 +16,10 @@ export interface IndexProps {
 const Index: React.FC<IndexProps> = ({ portfolioData }) => {
   return (
     <Layout>
-      <Navbar />
+      <Navbar
+        resumeLink={portfolioData.experienceSection.resumeLink}
+        socialLinks={portfolioData.contactAndFooterSection.socialLinks}
+      />
       <Hero
         heroSection={portfolioData.heroSection}
         socialLinks={portfolioData.contactAndFooterSection.socialLinks}

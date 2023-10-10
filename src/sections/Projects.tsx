@@ -25,7 +25,7 @@ export const Projects: React.FC<ProjectsProps> = ({
             key={index}
             name={project.name}
             description={project.description}
-            link={project.description}
+            link={project.link}
             technologies={project.technologies}
           />
         );

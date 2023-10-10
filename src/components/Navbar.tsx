@@ -9,8 +9,17 @@ import {
 } from "@chakra-ui/react";
 import { DarkModeSwitch } from "./DarkModeSwitch";
 import { HamburgerIcon } from "@chakra-ui/icons";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa6";
+import { FaRegFileAlt } from "react-icons/fa";
+import Link from "next/link";
+import { typeInfo } from "../pages";
 
-export const Navbar = () => {
+interface NavbarProps {
+  resumeLink: typeInfo["experienceSection"]["resumeLink"];
+  socialLinks: typeInfo["contactAndFooterSection"]["socialLinks"];
+}
+
+export const Navbar: React.FC<NavbarProps> = ({ resumeLink, socialLinks }) => {
   return (
     <Box>
       <Flex direction={"row"} alignItems={"center"} justifyContent={"flex-end"}>
@@ -25,10 +34,18 @@ export const Navbar = () => {
             size="lg"
           />
           <MenuList>
-            <MenuItem command="⌘T">New Tab</MenuItem>
-            <MenuItem command="⌘N">New Window</MenuItem>
-            <MenuItem command="⌘⇧N">Open Closed Tab</MenuItem>
-            <MenuItem command="⌘O">Open File...</MenuItem>
+            <Link href={socialLinks.github}>
+              <MenuItem icon={<FaGithub />}>GitHub</MenuItem>
+            </Link>
+            <Link href={socialLinks.linkedIn}>
+              <MenuItem icon={<FaLinkedin />}>LinkedIn</MenuItem>
+            </Link>
+            <Link href={socialLinks.twitter}>
+              <MenuItem icon={<FaTwitter />}>Twitter</MenuItem>
+            </Link>
+            <Link href={resumeLink}>
+              <MenuItem icon={<FaRegFileAlt />}>Résumé</MenuItem>
+            </Link>
           </MenuList>
         </Menu>
       </Flex>
