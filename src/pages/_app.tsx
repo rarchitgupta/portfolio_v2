@@ -1,4 +1,3 @@
-"use client";
 import { ChakraProvider } from "@chakra-ui/provider";
 import { CacheProvider } from "@chakra-ui/next-js";
 import theme from "../theme";
@@ -13,11 +12,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Archit Gupta</title>
       </Head>
-      <CacheProvider>
-        <ChakraProvider theme={theme}>
-          <Component {...pageProps} />
-        </ChakraProvider>
-      </CacheProvider>
+      <ChakraProvider theme={theme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
     </>
   );
 }

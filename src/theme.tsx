@@ -17,6 +17,11 @@ const breakpoints: Record<breakPointSizes, breakPointValues> = {
   xl: "80em",
 };
 
+const colorModeConfig = {
+  initialColorMode: "light",
+  useSystemColorMode: true,
+};
+
 const theme = extendTheme({
   colors: {
     headingColors: {
@@ -34,6 +39,7 @@ const theme = extendTheme({
   },
   fonts,
   breakpoints,
+  colorModeConfig,
 });
 
 export default theme;
