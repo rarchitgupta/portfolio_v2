@@ -4,11 +4,13 @@ import { H2 } from "./Headings/H2";
 import { typeInfo } from "../pages";
 
 export const ExperienceStack = (
-  experience: typeInfo["experienceSection"]["experiences"][0],
+  experience: typeInfo["experienceSection"]["experiences"][0]
 ) => {
   return (
     <Stack my={8}>
-      <H3 size={{ base: "sm", md: "md" }}>{experience.duration}</H3>
+      <H2 size={{ base: "sm", md: "md" }} fontWeight={400}>
+        {experience.duration}
+      </H2>
       <H2 size={{ base: "md", md: "lg" }}>
         {experience.position} • {experience.organization}
       </H2>

@@ -11,6 +11,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Analytics />
       <Head>
         <title>Archit Gupta</title>
+        <script
+          data-project-id="1rzRv1KhH8z3jiGcw2UF4eAtoqYJWIxniREB7340"
+          src="https://snippet.meticulous.ai/v1/meticulous.js"
+        />
       </Head>
       <ChakraProvider theme={theme}>
         <Component {...pageProps} />
