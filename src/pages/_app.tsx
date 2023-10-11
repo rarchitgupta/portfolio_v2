@@ -11,10 +11,11 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Analytics />
       <Head>
         <title>Archit Gupta</title>
-        <meta name="description">
-          Software Engineer and Web Developer portfolio site. I love to build
-          systems and experiences and I'm available to work
-        </meta>
+        <meta
+          name="description"
+          content="Software Engineer and Web Developer portfolio site. I love to build
+          systems and experiences and I'm available to work"
+        />
         <script
           data-project-id="1rzRv1KhH8z3jiGcw2UF4eAtoqYJWIxniREB7340"
           src="https://snippet.meticulous.ai/v1/meticulous.js"
