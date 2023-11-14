@@ -18,8 +18,8 @@
     "framer-motion": "10.16.4",
     "lottie-react": "^2.4.0",
     "next": "latest",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "latest",
+    "react-dom": "latest",
     "react-icons": "^4.11.0"
   },
   "devDependencies": {

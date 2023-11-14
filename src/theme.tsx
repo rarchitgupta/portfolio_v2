@@ -1,10 +1,9 @@
 import { extendTheme } from "@chakra-ui/react";
-import { Inter, Rubik } from "next/font/google";
-const inter = Inter({ subsets: ["latin"] });
-const rubik = Rubik({ subsets: ["latin"] });
+import { Gabarito } from "next/font/google";
+const gabarito = Gabarito({ subsets: ["latin"] });
 const fonts = {
-  body: inter.style.fontFamily,
-  heading: rubik.style.fontFamily,
+  body: gabarito.style.fontFamily,
+  heading: gabarito.style.fontFamily,
 };
 
 export type breakPointSizes = "sm" | "md" | "lg" | "xl";

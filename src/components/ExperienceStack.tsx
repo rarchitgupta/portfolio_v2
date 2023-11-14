@@ -1,5 +1,4 @@
 import { Flex, Stack, Tag, Text } from "@chakra-ui/react";
-import { H3 } from "./Headings/H3";
 import { H2 } from "./Headings/H2";
 import { typeInfo } from "../pages";
 
@@ -8,19 +7,19 @@ export const ExperienceStack = (
 ) => {
   return (
     <Stack my={8}>
-      <H2 size={{ base: "sm", md: "md" }} fontWeight={400}>
+      <H2 size={{ base: "md", md: "lg" }} fontWeight={400}>
         {experience.duration}
       </H2>
-      <H2 size={{ base: "md", md: "lg" }}>
+      <H2 size={{ base: "lg", md: "xl" }}>
         {experience.position} • {experience.organization}
       </H2>
-      <Text fontSize={{ base: "sm", md: "xl" }}>{experience.description}</Text>
+      <Text fontSize={{ base: "md", md: "2xl" }}>{experience.description}</Text>
       <Flex flexWrap={"wrap"} gap={3}>
         {experience.skills.split(",").map((skill, index) => {
           return (
             <Tag
               key={index}
-              fontSize={{ base: "sm", md: "lg" }}
+              fontSize={{ base: "md", md: "xl" }}
               colorScheme="teal"
             >
               {skill}

@@ -22,10 +22,10 @@ const Footer: React.FC<FooterProps> = ({ socialLinks, email }) => {
   const { colorMode } = useColorMode();
   return (
     <Container maxW="6xl" my={16}>
-      <H2 size={{ base: "lg", md: "xl" }} my={4} fontWeight={400}>
+      <H2 size={{ base: "xl", md: "2xl" }} my={4} fontWeight={400}>
         GET IN TOUCH
       </H2>
-      <Text fontSize={{ base: "md", md: "lg" }}>
+      <Text fontSize={{ base: "lg", md: "xl" }}>
         You can reach out to me at
       </Text>
       <Link href={`mailto: ${email}`}>
@@ -33,10 +33,10 @@ const Footer: React.FC<FooterProps> = ({ socialLinks, email }) => {
           {email}
         </Button>
       </Link>
-      <Text my={4} fontSize={{ base: "md", md: "lg" }}>
+      <Text my={4} fontSize={{ base: "lg", md: "xl" }}>
         Or
       </Text>
-      <Text fontSize={{ base: "md", md: "lg" }}>Contact me through</Text>
+      <Text fontSize={{ base: "lg", md: "xl" }}>Contact me through</Text>
       <Flex my={2} gap={2}>
         <Link href={socialLinks.github}>
           <IconButton

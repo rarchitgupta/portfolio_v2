@@ -1,5 +1,4 @@
 import { ChakraProvider } from "@chakra-ui/provider";
-import { CacheProvider } from "@chakra-ui/next-js";
 import theme from "../theme";
 import { AppProps } from "next/app";
 import Head from "next/head";

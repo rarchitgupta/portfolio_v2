@@ -1,13 +1,4 @@
-import {
-  Badge,
-  Box,
-  Button,
-  Container,
-  Divider,
-  Flex,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Button, Container, Divider } from "@chakra-ui/react";
 import { ExperienceStack } from "../components/ExperienceStack";
 import { typeInfo } from "../pages";
 import { FaRegFileAlt } from "react-icons/fa";
@@ -25,7 +16,7 @@ const Experience: React.FC<ExperienceProps> = ({
 }) => {
   return (
     <Container maxW="6xl" my={16}>
-      <H2 size={{ base: "lg", md: "xl" }} my={8} fontWeight={400}>
+      <H2 size={{ base: "xl", md: "2xl" }} my={8} fontWeight={400}>
         EXPERIENCE
       </H2>
       {experienceArray?.map((experience, index) => {
