@@ -23,7 +23,7 @@ const Footer: React.FC<FooterProps> = ({ socialLinks, email }) => {
   return (
     <Container maxW="6xl" my={16}>
       <H2 size={{ base: "xl", md: "2xl" }} my={4} fontWeight={400}>
-        GET IN TOUCH
+        Get in touch
       </H2>
       <Text fontSize={{ base: "lg", md: "xl" }}>
         You can reach out to me at

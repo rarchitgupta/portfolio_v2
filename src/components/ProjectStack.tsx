@@ -9,7 +9,9 @@ export const ProjectStack = (
 ) => {
   return (
     <Stack my={8}>
-      <H2 size={{ base: "lg", md: "xl" }}>{project.name}</H2>
+      <H2 size={{ base: "lg", md: "xl" }} fontWeight={500}>
+        {project.name}
+      </H2>
       <Text fontSize={{ base: "md", md: "2xl" }}>{project.description}</Text>
       <Flex flexWrap={"wrap"} gap={3}>
         {project.technologies.split(",").map((tech, index) => {

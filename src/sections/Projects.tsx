@@ -3,7 +3,7 @@ import { typeInfo } from "../pages";
 import { ProjectStack } from "../components/ProjectStack";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa6";
-import { H2 } from "../components/Headings/H2";
+import { H1 } from "../components/Headings/H1";
 
 interface ProjectsProps {
   projectsArray: typeInfo["projectSection"]["projects"];
@@ -13,9 +13,9 @@ interface ProjectsProps {
 const Projects: React.FC<ProjectsProps> = ({ projectsArray, githubLink }) => {
   return (
     <Container maxW="6xl">
-      <H2 size={{ base: "lg", md: "xl" }} my={8} fontWeight={400}>
-        PROJECTS
-      </H2>
+      <H1 size={{ base: "xl", md: "2xl" }} my={8} fontWeight={500}>
+        Projects
+      </H1>
       {projectsArray?.map((project, index) => {
         return (
           <ProjectStack

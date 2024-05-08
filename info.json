@@ -7,7 +7,7 @@
     "resumeLink": "https://drive.google.com/file/d/1KGgEpmXPVYmINI0-s1SgyhvRQmUfYB-S/view?usp=drive_link",
     "experiences": [
       {
-        "key": 1,
+        "key": 2,
         "organization": "Bonatra",
         "position": "Software Engineer",
         "duration": "September 2022 - Present",
@@ -15,20 +15,12 @@
         "skills": "Python, JavaScript, React, React Native, Frappe, SQL, MongoDB"
       },
       {
-        "key": 2,
+        "key": 3,
         "organization": "QuickMetrix",
         "position": "Software Engineer Intern",
         "duration": "January 2022 - June 2022",
         "description": "Worked as an intern where I came up with a new audit log API for the platform and helped integrate it while migrating old logs into the new format",
         "skills": "Python, JavaScript, FastAPI, MongoDB"
-      },
-      {
-        "key": 3,
-        "organization": "Ericsson",
-        "position": "Intern Trainee",
-        "duration": "June 2021 - August 2021",
-        "description": "Received basic training in Python, SQL and Shell Scripting and completed relevant assignments and projects in the same",
-        "skills": "Python, SQL, Shell, Linux"
       }
     ]
   },

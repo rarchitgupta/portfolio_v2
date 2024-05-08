@@ -3,7 +3,7 @@ import { ExperienceStack } from "../components/ExperienceStack";
 import { typeInfo } from "../pages";
 import { FaRegFileAlt } from "react-icons/fa";
 import Link from "next/link";
-import { H2 } from "../components/Headings/H2";
+import { H1 } from "../components/Headings/H1";
 
 interface ExperienceProps {
   experienceArray: typeInfo["experienceSection"]["experiences"];
@@ -16,9 +16,9 @@ const Experience: React.FC<ExperienceProps> = ({
 }) => {
   return (
     <Container maxW="6xl" my={16}>
-      <H2 size={{ base: "xl", md: "2xl" }} my={8} fontWeight={400}>
-        EXPERIENCE
-      </H2>
+      <H1 size={{ base: "xl", md: "2xl" }} my={8} fontWeight={500}>
+        Experience
+      </H1>
       {experienceArray?.map((experience, index) => {
         return (
           <ExperienceStack

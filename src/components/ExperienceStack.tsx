@@ -10,7 +10,7 @@ export const ExperienceStack = (
       <H2 size={{ base: "md", md: "lg" }} fontWeight={400}>
         {experience.duration}
       </H2>
-      <H2 size={{ base: "lg", md: "xl" }}>
+      <H2 size={{ base: "lg", md: "xl" }} fontWeight={500}>
         {experience.position} • {experience.organization}
       </H2>
       <Text fontSize={{ base: "md", md: "2xl" }}>{experience.description}</Text>
